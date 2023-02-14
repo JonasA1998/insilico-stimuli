@@ -46,11 +46,11 @@ class Bar(nn.Module, Stimulus):
             grey_level=grey_level
         )
 
-        location = self.parse_parameter(location),
-        length = self.parse_parameter(length),
-        width = self.parse_parameter(width),
-        contrast = self.parse_parameter(contrast),
-        orientation = self.parse_parameter(orientation),
+        location = self.parse_parameter(location)
+        length = self.parse_parameter(length)
+        width = self.parse_parameter(width)
+        contrast = self.parse_parameter(contrast)
+        orientation = self.parse_parameter(orientation)
         grey_level = self.parse_parameter(grey_level)
 
         self.location = nn.Parameter(torch.Tensor(location))
